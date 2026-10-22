@@ -17,6 +17,7 @@ import com.tencent.kuikly.compose.foundation.layout.padding
 import com.tencent.kuikly.compose.foundation.layout.width
 import com.tencent.kuikly.compose.foundation.shape.RoundedCornerShape
 import com.tencent.kuikly.compose.material3.Button
+import com.tencent.kuikly.compose.material3.ButtonDefaults
 import com.tencent.kuikly.compose.material3.Text
 import com.tencent.kuikly.compose.setContent
 import com.tencent.kuikly.compose.ui.Modifier
@@ -93,8 +94,12 @@ private fun SkeletonComposeDemo() {
             onClick = { motionOn = !motionOn },
             modifier = Modifier
                 .fillMaxWidth()
-                .height(44.dp)
-                .background(Color(0xFFF2F4F7), RoundedCornerShape(8.dp)),
+                .height(44.dp),
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFF2F4F7),
+                contentColor = Color(0xFF1F2328),
+            ),
         ) {
             Text(
                 text = if (motionOn) "闪光开" else "闪光关",
