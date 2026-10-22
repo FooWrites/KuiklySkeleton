@@ -6,7 +6,7 @@ Kuikly 骨架占位。自研 DSL 画列表和详情的灰色占位块，Compose 
 
 ## 效果
 
-Android 真跑 demo，页面 `skeleton_demo`。
+自研 DSL · Android
 
 <table>
   <tr>
